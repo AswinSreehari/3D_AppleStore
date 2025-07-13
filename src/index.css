@@ -54,6 +54,7 @@ body::-webkit-scrollbar-thumb {
   pointer-events: none;
   min-height: 831px;
   background: transparent;
+  /* transform: translateY(100vh); */
 }
 
 #webgi-canvas-container .button {
@@ -170,7 +171,7 @@ nav .list-styled {
   display: flex;
   justify-content: space-between;
   list-style: none;
-}
+ }
 
 nav .link-styled {
   font-size: 12px;
@@ -199,6 +200,70 @@ nav .link-styled {
   z-index: 1;
   min-height: 831px;
 }
+
+.landing-video-section {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  background-color: white;
+}
+
+.landing-video-section video {
+  width: calc(100% - 20px); 
+  height: 100%  ;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+
+.video-container {
+  width: 90vw;
+  height: 100vh;
+  border-radius: 20px;
+  overflow: hidden;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+ 
+.landing-heading {
+  font-size: 3rem;
+  color: #000;  
+  margin-bottom: 10px;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  z-index: 2;
+  position: relative;
+  font-weight: 600;
+}
+
+.heading-right{
+font-size: 2rem;
+  color: #000;  
+  margin-top: 46px;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  z-index: 2;
+  position: relative;
+  font-weight: 600;
+}
+
+.heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 50vw;
+}
+
 
 .jumbotron-section .title {
   color: #86868b;
@@ -397,6 +462,27 @@ nav .link-styled {
   margin: 0 14px;
   cursor: pointer;
 }
+
+.color-picker-section {
+  position: absolute;
+  top: 90vh;
+  right: 43vw;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+/* .color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+} */
+
+ 
+
 
 @media screen and (max-width: 990px) {
   .jumbotron-section .iphone-img,
