@@ -6,8 +6,8 @@ import WebgiViewer from "./components/WebgiViewer";
 import { useRef } from "react";
 import Loader from "./components/Loader";
 import LandingSection from "./components/LandingSection";
-// import EarthGlobe from "./components/EarthGlobe";
- 
+// import GlobeSection from "./components/Globe";
+  
 function App() {
   const webgiViewerRef = useRef();
   const contentRef = useRef();
@@ -26,7 +26,7 @@ function App() {
        <SoundSection />
        <DisplaySection triggerPreview={handlePreview} />
       </div>
-      {/* <EarthGlobe /> */}
+       {/* <GlobeSection /> */}
        <WebgiViewer contentRef={contentRef} ref={webgiViewerRef} />
     </div>
   );

@@ -145,6 +145,18 @@ body::-webkit-scrollbar-thumb {
   right: 10px;
 }
 
+/* .preview-container {
+  background-image: url('./assets/images/display-section-bg.jpg');  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+} */
+
+
 nav.nav-wrapper {
   margin: 0;
   width: 100%;
@@ -199,6 +211,10 @@ nav .link-styled {
   position: relative;
   z-index: 1;
   min-height: 831px;
+  /* background-image: url('./assets/images/jumbotronBG.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
 }
 
 .landing-video-section {
@@ -465,9 +481,9 @@ font-size: 2rem;
 
 .color-picker-section {
   position: absolute;
-  top: 90vh;
+  top: 10vh;
   right: 43vw;
-  background: rgba(0, 0, 0, 0.8);
+  background: transparent;
   padding: 15px;
   border-radius: 10px;
   z-index: 1000;

@@ -15,7 +15,7 @@ const DisplaySection = ({ triggerPreview }) => {
         <div className="title">New</div>
          <p className='text' >Brilliant</p>
          <span className='description'>A display that's up to 2x brighter in the sun</span>
-         <button className='button' onClick={triggerPreview}>Try me!</button>
+         <button className='button' onClick={triggerPreview}>Preview</button>
          <button className='back-button' onClick={handleScrollToTop}>TOP</button>
      </div>
   )
